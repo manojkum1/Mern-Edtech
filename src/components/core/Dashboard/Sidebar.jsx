@@ -113,7 +113,7 @@ export default function Sidebar({ toggleSidebar }) {
       </div>
 
       {/* Carousel sidebar for smaller screens */}
-      <div className="flex md:hidden  w-full overflow-x-auto py-4 border-b-[1px] border-b-richblack-700 bg-richblack-800">
+      <div className="flex md:hidden  w-full overflow-x-auto overflow-y-auto scroll-smooth py-4 border-b-[1px] border-b-richblack-700 bg-richblack-800">
         <div className="flex flex-row items-center gap-x-4">
           {sidebarLinks.map((link) => {
             if (link.type && user?.accountType !== link.type) return null;
